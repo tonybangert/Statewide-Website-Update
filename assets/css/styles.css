@@ -373,6 +373,9 @@ button {
 
   .nav__link {
     padding: var(--space-3) var(--space-4);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
     font-size: var(--text-base);
     border-radius: var(--radius-lg);
   }
@@ -1179,6 +1182,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .hero__card {
+    max-width: 100%;
+  }
+
   .hero__stats {
     flex-wrap: wrap;
     gap: var(--space-6);
@@ -1194,6 +1201,20 @@ button {
   }
 
   .hero__actions .btn {
+    justify-content: center;
+  }
+
+  .login-portal__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-2);
+  }
+
+  .login-portal__buttons {
+    justify-content: space-between;
+  }
+
+  .login-portal__remember {
     justify-content: center;
   }
 
@@ -1241,7 +1262,7 @@ button {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 var(--space-4);
+    padding: 0 var(--space-5);
   }
 
   .trusted__logos {
@@ -1250,6 +1271,65 @@ button {
 
   .feature-card {
     padding: var(--space-6);
+  }
+
+  .btn--sm {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .form__input,
+  .form__select,
+  .form__textarea,
+  .login-portal__input {
+    min-height: 44px;
+    font-size: var(--text-base);
+  }
+
+  .login-portal__btn {
+    min-height: 44px;
+    padding: var(--space-2) var(--space-5);
+  }
+}
+
+@media (max-width: 360px) {
+  .partnership__connector {
+    width: 20px;
+  }
+
+  .partnership__hub {
+    width: 70px;
+    height: 70px;
+  }
+
+  .partnership__hub-text {
+    font-size: var(--text-xs);
+  }
+
+  .partnership__spoke-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .partnership__spoke-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .service-mock__flow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+  }
+
+  .service-mock__flow-connector {
+    display: none;
+  }
+
+  .service-mock__node {
+    flex-direction: row;
+    gap: var(--space-2);
   }
 }
 
@@ -1779,6 +1859,21 @@ button {
 
   .service-mock__flow {
     gap: var(--space-1);
+  }
+
+  .service-mock__node-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-mock__node-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .service-mock__flow-connector svg {
+    width: 18px;
+    height: 18px;
   }
 }
 

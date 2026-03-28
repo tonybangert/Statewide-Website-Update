@@ -18,7 +18,7 @@
         <span class="nav__logo-icon">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="32" height="32" rx="8" fill="currentColor"/>
-            <path d="M8 10h16M8 16h12M8 22h14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="16" cy="16" r="9" stroke="white" stroke-width="2"/><ellipse cx="16" cy="16" rx="4.5" ry="9" stroke="white" stroke-width="1.5"/><path d="M7.5 13h17M7.5 19h17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </span>
         <span class="nav__logo-text">Statewide<span class="accent">Publishing</span></span>
@@ -58,49 +58,61 @@
     <section class="contact-section">
       <div class="container">
         <div class="contact__grid">
-          <!-- Contact Info -->
+          <!-- Partnership Overview -->
           <div class="contact__info" data-animate="fade-right">
-            <h2 class="section-title" style="text-align: left; margin-bottom: var(--space-2);">Contact Information</h2>
-            <p style="color: var(--color-gray-500); margin-bottom: var(--space-8);">Reach out and we'll get back to you within 24 hours.</p>
+            <!-- Hub-and-Spoke Infographic -->
+            <div class="partnership__visual">
+              <div class="partnership__spoke partnership__spoke--left">
+                <div class="partnership__spoke-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V5a2 2 0 0 1 2-2h6l2 2h6a2 2 0 0 1 2 2v4"/><path d="M14 17h6"/><path d="M17 14v6"/></svg>
+                </div>
+                <span class="partnership__spoke-label">Law Firms</span>
+              </div>
+              <div class="partnership__connector partnership__connector--left"></div>
+              <div class="partnership__hub">
+                <span class="partnership__hub-text">Statewide<br><small>LNS</small></span>
+              </div>
+              <div class="partnership__connector partnership__connector--right"></div>
+              <div class="partnership__spoke partnership__spoke--right">
+                <div class="partnership__spoke-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6z"/></svg>
+                </div>
+                <span class="partnership__spoke-label">Publishers</span>
+              </div>
+            </div>
 
-            <div class="contact__info-cards">
-              <div class="contact__info-card">
-                <div class="contact__info-card-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <h2 class="section-title" style="text-align: left; margin-bottom: var(--space-1);">Statewide Publishing</h2>
+            <p style="font-size: var(--text-lg); font-weight: 500; color: var(--color-gray-500); margin-bottom: var(--space-6);">Powered by Legal Notice Service (LNS)</p>
+            <p style="color: var(--color-gray-500); margin-bottom: var(--space-8); line-height: 1.7;">We sit at the center of the legal notice ecosystem. By seamlessly connecting law firms with a vast network of publishers, we deliver compliance-ready services that remove the friction from public notices.</p>
+
+            <div class="partnership__features">
+              <div class="partnership__feature">
+                <div class="partnership__feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V5a2 2 0 0 1 2-2h6l2 2h6a2 2 0 0 1 2 2v4"/><path d="M14 17h6"/><path d="M17 14v6"/></svg>
                 </div>
                 <div>
-                  <h4>Office</h4>
-                  <p>6828 171st St<br>Tinley Park, IL 60477</p>
+                  <h4>For Law Firms</h4>
+                  <p>Streamlined order placement and guaranteed compliance.</p>
                 </div>
               </div>
 
-              <div class="contact__info-card">
-                <div class="contact__info-card-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div class="partnership__feature">
+                <div class="partnership__feature-icon partnership__feature-icon--teal">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6z"/></svg>
                 </div>
                 <div>
-                  <h4>Phone</h4>
-                  <p><a href="tel:7086208338">(708) 620-8338</a></p>
+                  <h4>For Publishers</h4>
+                  <p>Automated workflows and consistent revenue streams.</p>
                 </div>
               </div>
 
-              <div class="contact__info-card">
-                <div class="contact__info-card-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div class="partnership__feature">
+                <div class="partnership__feature-icon partnership__feature-icon--green">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 </div>
                 <div>
-                  <h4>Email</h4>
-                  <p><a href="mailto:info@statewide-publishing.com">info@statewide-publishing.com</a></p>
-                </div>
-              </div>
-
-              <div class="contact__info-card">
-                <div class="contact__info-card-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </div>
-                <div>
-                  <h4>Business Hours</h4>
-                  <p>Monday – Friday: 8:00 AM – 5:00 PM CST</p>
+                  <h4>Compliance Ready</h4>
+                  <p>Bulletproof affidavits and tracking built into every step.</p>
                 </div>
               </div>
             </div>
@@ -108,7 +120,7 @@
 
           <!-- Contact Form -->
           <div class="contact__form-card" data-animate="fade-left" data-delay="200">
-            <h3 class="contact__form-title">Send us a message</h3>
+            <h3 class="contact__form-title">Ready to Get Started?</h3>
             <p class="contact__form-subtitle">Fill out the form below and we'll be in touch shortly.</p>
 
             <form id="contact-form" action="#" method="post">
@@ -198,7 +210,7 @@
             <span class="nav__logo-icon">
               <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="32" height="32" rx="8" fill="currentColor"/>
-                <path d="M8 10h16M8 16h12M8 22h14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="16" cy="16" r="9" stroke="white" stroke-width="2"/><ellipse cx="16" cy="16" rx="4.5" ry="9" stroke="white" stroke-width="1.5"/><path d="M7.5 13h17M7.5 19h17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </span>
             Statewide<span class="accent">Publishing</span>

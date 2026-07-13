@@ -28,6 +28,11 @@ All internal links are **relative**, so the site works unchanged whether it live
 - **Google Fonts** (Inter + Plus Jakarta Sans) loaded from `fonts.googleapis.com`. Needs public internet; nothing to self-host. If the host is locked down, self-host the two fonts and update the `<link>` tags in each page `<head>`.
 - Nothing else. No CDN scripts, no jQuery, no trackers.
 
+### Login portals (home page hero)
+The home page shows two login cards:
+- **Newspaper Login — Legal Notice Service (LNS):** the "Log In" button is a **direct external redirect to https://www.legalnoticeservice.com/**. There are no email/password fields; LNS handles its own authentication. Nothing to wire on this side.
+- **Client Login — Statewide Publishing:** still a **non-functional placeholder** form (email/password fields, `onsubmit="return false;"`). If a real client portal exists, point this at it; otherwise wire or remove it. Same status as the contact form below.
+
 ---
 
 ## Deploying to a test subdomain on statewide-publishing.com
@@ -109,6 +114,8 @@ If any of these change, they appear in the footer and CTA sections of each page.
 | HTML / CSS / JS | ✅ Complete, responsive, no build step |
 | Assets (favicon, fonts) | ✅ Intact; fonts via Google CDN |
 | Relative paths (subdomain-ready) | ✅ Verified |
+| Newspaper Login → LNS redirect | ✅ Live (external redirect, no auth needed here) |
+| Client Login form | ⬜ Placeholder; wire to real portal or remove |
 | Contact form submission | ⬜ Needs backend/service wiring |
 | Google Analytics | ⬜ Needs GA4 Measurement ID installed |
 | Privacy / Terms links | ⬜ Placeholder `#` links |
